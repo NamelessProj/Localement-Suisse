@@ -15,6 +15,8 @@ mdp: 12345678
 It's also an admin account
 ```
 
+When you access the admin dashboard, you'll need to login again. Just to be sure you're the right person.
+
 If you want to log in with a seller account:
 ```
 email: pintokevin2002@hotmail.com
