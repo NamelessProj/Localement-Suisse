@@ -12,7 +12,7 @@ To use the project, you'll have to get those libraries:
 ```
 You can find those in the [composer.json](./composer.json) file.
 
-## ImageMagick
+## ImagIck
 The project use the PHP extension `ImagIck` to handle images.
 
 [You can check this website to download ImageMagick, there's even the explanation how to install it.](https://mlocati.github.io/articles/php-windows-imagick.html)
