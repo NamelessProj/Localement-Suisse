@@ -150,10 +150,7 @@ include './components/navbar.php';
 ?>
 
 <header class="hero">
-    <picture class="bg-img">
-        <img src="https://placehold.co/600x400.png" alt="">
-    </picture>
-    <div class="hero-content">
+    <div class="hero-infos hero-content">
         <h1><?= $tr->translate("Ajouter un") ?> <span class="important"><?= $tr->translate("Produit") ?></span></h1>
     </div>
 </header>
