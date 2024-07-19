@@ -101,7 +101,9 @@ include './components/navbar.php';
             <br>
             <?php else: ?>
             <p><?= $tr->translate($error_msg) ?></p>
+            <?php if($nbTotalProducts > 0): ?>
             <a class="no-style button" href="./adminActiveSeller.php"><?= $tr->translate("Revenir à la page 1") ?></a>
+            <?php endif; ?>
             <?php
             endif;
 
