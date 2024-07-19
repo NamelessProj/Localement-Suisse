@@ -29,7 +29,7 @@ include './components/navbar.php';
 
 // CHECK FOR THE SELLER. IF IT'S A PRODUCT OF THE SELLER MORE OPTIONS WILL BE DISPLAY
 $sellerId = 0;
-if(isset($_SESSION['id'], $_SESSION['type']) && !is_numeric(intval($_SESSION['id'])) && !empty($_SESSION['id']) && !empty($_SESSION['type']) && $_SESSION['type'] === 'v') $sellerId = $_SESSION['id'];
+if(isset($_SESSION['user']['id'], $_SESSION['user']['type']) && is_numeric($_SESSION['user']['id']) && !empty($_SESSION['user']['id']) && !empty($_SESSION['user']['type']) && $_SESSION['user']['type'] === 'v') $sellerId = $_SESSION['user']['id'];
 
 if(!$thisProduct){ // IF THERE'S NO PRODUCT
     http_response_code(404);
