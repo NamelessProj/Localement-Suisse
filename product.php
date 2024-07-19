@@ -150,9 +150,13 @@ $sellerImg = ($seller->seller_img !== '' && file_exists(__DIR__."imgs/sellers/".
             <a href="./search.php?cat=<?= strip_tags($category->subcat_id) ?>" class="no-style tag"><?= $tr->translate(ucfirst(strip_tags($category->subcat_name))) ?></a>
         <?php endforeach; ?>
     </section>
-    <section class="container">
+    <section class="text-content">
         <h3><?= $tr->translate("Description") ?></h3>
-        <pre style='text-wrap: wrap; font-family: "Quicksand", "OpenSans", system-ui, sans-serif;'><?= $tr->translate(strip_tags($thisProduct->pro_description)) ?></pre>
+        <?php
+        $Parsedown = new Parsedown();
+        $Parsedown->setSafeMode(true);
+        ?>
+        <?= $Parsedown->text($trAuto->translate(strip_tags($thisProduct->pro_description))) ?>
     </section>
 </main>
 
