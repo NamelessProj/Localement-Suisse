@@ -3,6 +3,11 @@
 ## Project
 The project is a e-commerce website where people will be able to purchase Swiss made products.
 
+## DB
+To get the database, get the [db.sql](./DB) file from the DB directory.
+
+Don't forget to update your correct information in the [db.php](./db.php) file, to make the project able to get access to the database.
+
 ## Dependencies 
 To use the project, you'll have to get those libraries:
 ```json
@@ -12,7 +17,7 @@ To use the project, you'll have to get those libraries:
 ```
 You can find those in the [composer.json](./composer.json) file.
 
-## ImagIck
+## ImageMagick
 The project use the PHP extension `ImagIck` to handle images.
 
 [You can check this website to download ImageMagick, there's even the explanation how to install it.](https://mlocati.github.io/articles/php-windows-imagick.html)
