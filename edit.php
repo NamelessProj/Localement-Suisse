@@ -25,7 +25,7 @@ require_once './db.php';
 $sql = "SELECT * FROM products LEFT JOIN sellers ON sellers.seller_id = products.seller_id WHERE products.pro_id = :id AND sellers.seller_id = :seller_id AND products.pro_is_closed = 0 AND sellers.seller_uniqid = :uniq";
 $req = $db->prepare($sql);
 $req->bindValue(':id', $idProduct, PDO::PARAM_INT);
-$req->bindValue(':seller_id', $_SESSION['id'], PDO::PARAM_INT);
+$req->bindValue(':seller_id', $_SESSION['user']['id'], PDO::PARAM_INT);
 $req->bindValue(':uniq', $_SESSION['user']['uniq']);
 $req->execute();
 $thisProduct = $req->fetch();
@@ -190,7 +190,7 @@ $req = $db->prepare($sql);
 $req->bindValue(':pro_id', $thisProduct->pro_id, PDO::PARAM_INT);
 $req->execute();
 $images = $req->fetch();
-if($images) $imgLink = "products/".$images->img_name;
+$imgLink = ($images && file_exists(__DIR__."/imgs/products/".$images->img_name.".jpg")) ? "products/".$images->img_name.".jpg" : "default.jpg";
 
 include './components/navbar.php';
 
