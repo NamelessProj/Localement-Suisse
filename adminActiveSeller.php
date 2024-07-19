@@ -43,7 +43,7 @@ $page = 1; // SETTING THE CURRENT PAGE TO 1
 if(isset($_GET['page']) && !empty($_GET['page']) && is_numeric($_GET['page']) && $_GET['page'] > 1) $page = $_GET['page']; // IF A PAGE NUMBER IS GIVEN FROM THE $_GET, WE CHECK IF IT'S A VALID NUMBER AND IF IT IS, WE MAKE IT THE CURRENT PAGE NUMBER
 if(is_numeric($page) && $page > $pages_count){
     $text = $pages_count > 1 ? "pages" : "page";
-    $error_msg = "Cette page n'est pas valide. Il n'y a que ".$pages_count." ".$text.".";
+    $error_msg = $nbTotalProducts > 0 ? "Cette page n'est pas valide. Il n'y a que ".$pages_count." ".$text."." : "Il n'y a pas de vendeurs à approuver.";
 }
 
 // WE DEFINE THE LIMIT FOR THE SQL QUERY
@@ -101,6 +101,7 @@ include './components/navbar.php';
             <br>
             <?php else: ?>
             <p><?= $tr->translate($error_msg) ?></p>
+            <a class="no-style button" href="./adminActiveSeller.php"><?= $tr->translate("Revenir à la page 1") ?></a>
             <?php
             endif;
 
