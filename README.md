@@ -8,6 +8,21 @@ To get the database, get the [db.sql](./DB) file from the DB directory.
 
 Don't forget to update your correct information in the [db.php](./db.php) file, to make the project able to get access to the database.
 
+If you want to log in with a client account:
+```
+email: pintokevin2002@hotmail.com
+mdp: 12345678
+It's also an admin account
+```
+
+If you want to log in with a seller account:
+```
+email: pintokevin2002@hotmail.com
+mdp: 12345678
+But you'll need to check that you want to connect as a seller
+```
+
+
 ## Dependencies 
 To use the project, you'll have to get those libraries:
 ```json
