@@ -129,10 +129,14 @@ $sellerImg = ($seller->seller_img !== '' && file_exists(__DIR__."imgs/sellers/".
         <section style="margin-block: 1rem;">
             <a class="no-style button" href="edit.php?id=<?= $thisProduct->pro_id ?>"><?= $tr->translate("Modifier le produit") ?></a>
         </section>
-        <?php endif; ?>
+        <?php
+        endif;
+        if(!isset($_SESSION['user']['type'])):
+            ?>
         <section>
             <a href="./addToCart.php?id=<?= $thisProduct->pro_id ?>" class="no-style button" id="addToBasket"><?= $tr->translate("Ajouter au panier") ?></a>
         </section>
+        <?php endif; ?>
     </div>
 </header>
 
