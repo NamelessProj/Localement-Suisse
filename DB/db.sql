@@ -344,7 +344,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- Listage des données de la table localement_suisse.users : ~2 rows (environ)
 INSERT INTO `users` (`user_id`, `user_mail`, `user_uniqid`, `user_pseudo`, `user_password`, `user_tel`, `user_address_street`, `user_address_city`, `user_address_canton`, `typ_id`) VALUES
-	(1, 'pintokevin2002@hotmail.com', '12345', 'Kevin', '$argon2id$v=19$m=65536,t=4,p=1$WXdKMDhaUjU4a2RXWm80bA$hQmnnQXBPIiW8k3nFMbtNG45Pg1yeda2DZwhxJdfTPo', '0774871683', 'Rue de la Ravine 8', 'Gorgier', 'Neuchâtel', 1),
+	(1, 'pintokevin2002@hotmail.com', '12345', 'Kevin', '$argon2id$v=19$m=65536,t=4,p=1$WXdKMDhaUjU4a2RXWm80bA$hQmnnQXBPIiW8k3nFMbtNG45Pg1yeda2DZwhxJdfTPo', '0774871683', 'Rue de la Ravine 8', 'Gorgier', 'Neuchâtel', 2),
 	(2, 'kp.mail.pin@gmail.com', '67890', 'Eric', '$argon2id$v=19$m=65536,t=4,p=1$WXdKMDhaUjU4a2RXWm80bA$hQmnnQXBPIiW8k3nFMbtNG45Pg1yeda2DZwhxJdfTPo', NULL, 'Rue de la Ravine 8', 'La Grande Béroche', 'Neuchâtel', 1);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
