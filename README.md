@@ -1,5 +1,11 @@
 # Localement Suisse
 
+### Useful links
+- [Behance](https://www.behance.net/gallery/203646405/Localement-Suisse?share=1)
+- [Tech Doc](./LocalementSuisse_DocTech.pdf)
+
+
+
 ## Project
 The project is a e-commerce website where people will be able to purchase Swiss made products.
 
