@@ -17,7 +17,7 @@ Don't forget to update your correct information in the [db.php](./db.php) file, 
 If you want to log in with a client account:
 ```
 email: pintokevin2002@hotmail.com
-mdp: 12345678
+password: 12345678
 It's also an admin account
 ```
 
@@ -26,7 +26,7 @@ When you access the admin dashboard, you'll need to login again. Just to be sure
 If you want to log in with a seller account:
 ```
 email: pintokevin2002@hotmail.com
-mdp: 12345678
+password: 12345678
 But you'll need to check that you want to connect as a seller
 ```
 
